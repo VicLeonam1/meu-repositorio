@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/*HEADER*/
+
+header .interface{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
+}
+
+header h1{
+    text-shadow: 3px 3px 4px rgb(129, 129, 129);
+    font-weight: 600;
+    font-size: 40px;
+}
+
+header .interface #navegacao{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .interface #navegacao .lista{
+    list-style-type: none;
+}
+
+header .interface #navegacao .lista .lista-item{
+    display: inline-block;
+    font-size: 22px;
+    text-shadow: 2px 2px 2px rgb(129, 129, 129);
+    padding: 0 44px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+header .interface #navegacao .lista .lista-item a {
+    text-decoration: none;
+    color: black;
+}
+
+header .interface #navegacao .lista .lista-item:hover{
+    transform: scale(1.2);
+}
+
+header .interface img{
+    width: 40px;
+    height: 40px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+header .interface img:hover{
+    transform: scale(1.2);
+}
+
+/*MAIN*/
+
+main .interface {
+    margin: 70px;
+}
+
+main .interface #home{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .interface #home img{
+    width: 400px;
+    filter: drop-shadow(0px 0px 40px rgb(151, 151, 151));
+}
+
+main .interface #home #textos{
+    width: 550px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+main .interface #home #textos h1 {
+    font-weight: 400;
+}
+
+main .interface #home #textos h1 #nome{
+    font-weight: bold;
+}
+
+main .interface #home #textos button{
+    padding: 15px;
+    margin-top: 30px;
+    box-shadow: 5px 5px 10px rgb(129, 129, 129);
+    border-radius: 30px;
+    border: none;
+    color: white;
+    background-color: rgb(8, 4, 3);
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+main .interface #home #textos button:hover{
+    transform: scale(1.2);
+}
