@@ -6,6 +6,47 @@
     font-family: "Poppins", sans-serif;
 }
 
+@keyframes animar-titulo {
+    0% {
+        opacity: 0; /* Começa invisível */
+        transform: translateY(-20px); /* Desloca para cima */
+    }
+    100% {
+        opacity: 1; /* Termina visível */
+        transform: translateY(0); /* Retorna à posição original */
+    }
+}
+
+.letras {
+    animation: animar-titulo 2s ease; /* Aplica a animação */
+}
+
+
+/*SCROLL BAR*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 8px; 
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; 
+}
+
+
 /*HEADER*/
 header{
     z-index: 1;
@@ -14,7 +55,6 @@ header{
     width: 100%;
     background-color: rgba(255, 255, 255, 0.699);
     backdrop-filter: blur(10px);
-    box-shadow: 0px 15px 30px rgba(255, 255, 255, 0.699);
 }
 
 header .interface{
@@ -22,13 +62,13 @@ header .interface{
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 100px;
+    margin: 3px 100px;
 }
 
 header h1{
     text-shadow: 3px 3px 4px rgb(129, 129, 129);
     font-weight: 600;
-    font-size: 40px;
+    font-size: 35px;
 }
 
 header .interface #navegacao{ 
@@ -61,37 +101,33 @@ header .interface #navegacao .lista .lista-item:hover{
 
 /*MAIN - section( home )*/
 
-main .interface {
-    margin: 200px 140px;
-}
-
-main .interface #home{
+main #home{
+    margin: 140px 120px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
 }
 
-main .interface #home img{
+main #home img{
     width: 450px;
-    filter: drop-shadow(0px 0px 40px rgb(151, 151, 151));
 }
 
-main .interface #home #textos{
+main #home #textos{
     width: 550px;
     text-align: justify;
     font-size: 20px;
 }
 
-main .interface #home #textos h1 {
+main #home #textos h1 {
     font-weight: 400;
 }
 
-main .interface #home #textos h1 #nome{
+main #home #textos h1 #nome{
     font-weight: bold;
 }
 
-main .interface #home #textos button{
+main #home #textos button{
     padding: 15px;
     margin-top: 30px;
     box-shadow: 5px 5px 10px rgb(129, 129, 129);
@@ -105,6 +141,141 @@ main .interface #home #textos button{
     transition: .3s;
 }
 
-main .interface #home #textos button:hover{
+main #home #textos button:hover{
     transform: scale(1.2);
+}
+
+/*MAIN - SOBRE*/
+
+section#sobre{
+    margin-top: 50px;
+    padding: 50px;
+    background-color: black;
+    color: white;
+}
+
+section#sobre .sobre-mim-lista li {
+    font-size: 30px; 
+    margin: 25px 25px; 
+}
+
+section#sobre .sobre-mim-lista li span#titulos{
+    font-weight: bolder;
+    text-shadow: 3px 3px 5px gray;
+}
+
+section#sobre div.text-and-image img{
+    width: 400px;
+    
+    border-radius: 30px;
+}
+
+section#sobre h1{
+    font-weight: 300;
+    font-size: 50px;
+    text-shadow: 6px 5px 5px gray;
+}
+
+section#sobre h1 #mim {
+    font-weight: bold;
+}
+
+div.text-and-image{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+/*MAIN - COMPETÊNCIAS*/
+
+#competencias{
+    padding: 50px;
+}
+
+#competencias h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+#competencias #ferramentas{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 100px;
+    
+    padding: 0 100px;
+}
+
+#competencias #ferramentas img{
+    width: 100px;
+    transition: .2s;
+}
+
+#competencias #ferramentas img:hover{
+    transform: scale(1.3);
+}
+
+.itens-comp{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    font-size: 30px;
+}
+
+#javascript{
+    padding-top: 10px;
+}
+
+/*MAIN - PROJETOS*/
+
+#projetos h1{
+    text-align: center;
+    font-size: 50px;
+    padding: 22px 0;
+}
+
+#projetos .meus-projetos .lista-de-projetos .projeto a img{
+  width: 300px;
+  border-radius: 20px;
+}
+
+#projetos .meus-projetos .lista-de-projetos .projeto a{
+    text-decoration: none;
+    color: black;
+}
+
+#projetos .meus-projetos .lista-de-projetos .projeto.swiper-slide{
+    user-select: none;
+    text-align: justify;
+    box-shadow: 2px 2px 40px rgba(129, 129, 129, 0.432);
+    padding: 20px;
+    border-radius: 20px;
+    margin: auto;
+    background-color: white;
+    transition: .2s;
+    width: 300px; /* Definindo largura para cada slide */
+} 
+
+#projetos .meus-projetos .lista-de-projetos li:hover{
+    transform: scale(1.1);
+}
+
+#projetos .meus-projetos .lista-de-projetos li{
+    margin: 0 60px;
+}
+
+#projetos .meus-projetos .lista-de-projetos .projeto a p{
+    font-size: 15px;
+    padding: 20px 0;
+}
+
+.material-symbols-outlined{
+    border: none;
+    background: none;
+    transform: rotate(-40deg);
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 5px;
 }

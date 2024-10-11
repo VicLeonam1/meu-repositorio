@@ -1,54 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-
-    <!--Fontes do google-->
+<html lang="pt-BR">
+  <!-- Define o idioma do documento -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    <!-- Fonte do Google -->
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
     </style>
-    <!--Fim das fontes do google-->
+    <!-- Fim das fontes do Google -->
 
-    <title>Meu Portifólio</title>
-</head>
-<body>
+    <title>Meu Portfólio</title>
+  </head>
+  <body>
+    <!-- Cabeçalho com logo e navegação -->
     <header>
-        <div class="interface">
-            <h1>Victor.</h1>
-            <nav id="navegacao">
-                <ul class="lista">
-                    <li class="lista-item">
-                        <a href="#">Home</a>
-                    </li>
-                    <li class="lista-item">
-                        <a href="#">Sobre</a>
-                    </li>
-                    <li class="lista-item">
-                        <a href="#">Projetos</a>
-                    </li>
-                    <li class="lista-item">
-                        <a href="#">Competencias</a>
-                    </li>
-                </ul>
-            </nav>
-        </div><!--INTERFACE-->
-    </header><!--HEADER-->
+      <div class="interface">
+        <h1 class="letras">Victor.</h1>
+        <nav id="navegacao" class="letras">
+          <ul class="lista">
+            <li class="lista-item"><a href="#home">Home</a></li>
+            <li class="lista-item"><a href="#sobre">Sobre</a></li>
+            <li class="lista-item"><a href="#competencias">Competências</a></li>
+            <li class="lista-item"><a href="#projetos">Projetos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Fim do Cabeçalho -->
 
+    <!-- Conteúdo Principal -->
     <main>
-        <div class="interface">
-            <section id="home">
-                <div id="textos">
-                    <h1>Oi, Eu sou <span id="nome">Victor Leonam...</span></h1>
-                    <h3>Desenvolvedor Web Front-end.</h3>
-                    <p>Um desenvolvedor apaixonado por desenvolvimento web front-end pronto para transformar ideias em realidade.</p>
-                    <button>Contato</button>
-                </div>
-                <img src="images/minha-foto.png" alt="minha foto" id="minha-foto">
-            </section>
+      <!-- Seção Home -->
+      <section id="home">
+        <div id="textos">
+          <h1 class="letras">Oi, Eu sou <span id="nome">Victor Leonam...</span></h1>
+          <h3 class="letras">Desenvolvedor Web Front-end.</h3>
+          <p class="letras">
+            Um desenvolvedor apaixonado por desenvolvimento web front-end,
+            pronto para transformar ideias em realidade.
+          </p>
+          <button class="letras">Contato</button>
         </div>
+        <img src="images/progamador.png" alt="Programador trabalhando" class="letras" />
+        <!-- Imagem de programador -->
+      </section>
+      <!-- Fim da Seção Home -->
+
+      <!-- Seção Sobre Mim -->
+      <section id="sobre">
+        <h1>Sobre <span id="mim">mim</span></h1>
+        <div class="text-and-image">
+            <ul class="sobre-mim-lista">
+                <li><span id="titulos">Nome:</span> Victor Leonam</li>
+                <li><span id="titulos">Localização:</span> Belém do Pará</li>
+                <li><span id="titulos">Profissão:</span> Desenvolvedor Web Front-end</li>
+                <li><span id="titulos">Interesses:</span> Criar sites práticos e bonitos</li>
+                <li><span id="titulos">Hobbies:</span> Videogames e tecnologia</li>
+              </ul>
+          <img
+            src="images/minha-foto.jpg"
+            alt="Foto de Victor Leonam"
+            id="minha-foto"
+          />
+          <!-- Sua foto -->
+        </div>
+      </section>
+      <!-- Fim da Seção Sobre Mim -->
+
+      <!-- Seção de competências-->
+       <section id="competencias">
+            <h1>Competências</h1>
+            <div id="ferramentas">
+                <img src="images/html5.png" alt="">
+                <img src="images/css3.png" alt="">
+                <img src="images/javascript.png" alt="">
+            </div>
+       </section>
+       <!-- Fim da seção de competências-->
+
+       <!--Seção de projetos-->
+       <section id="projetos" >
+            <h1>Meus <span>Projetos</span></h1>
+            <div class="swiper">
+
+                <div class="meus-projetos">
+                    <ul class="lista-de-projetos swiper-wrapper">
+                    <li class="projeto swiper-slide">
+                        <a href="#">
+                            <img src="images/projeto.png" alt="projeto">
+                            <h3>Nome de projeto</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore mollitia asperiores incidunt quasi unde, commodi in! Suscipit ullam quia dolor perferendis, eaque odio obcaecati temporibus facere ea vel corrupti illum!</p>
+                            <button class="material-symbols-outlined">arrow_forward</button>
+                        </a>
+                    </li>
+                    <li class="projeto swiper-slide">
+                        <a href="#">
+                            <img src="images/projeto.png" alt="projeto">
+                            <h3>Nome de projeto</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore mollitia asperiores incidunt quasi unde, commodi in! Suscipit ullam quia dolor perferendis, eaque odio obcaecati temporibus facere ea vel corrupti illum!</p>
+                            <button class="material-symbols-outlined">arrow_forward</button>
+                        </a>
+                    </li>
+                    <li class="projeto swiper-slide">
+                        <a href="#">
+                            <img src="images/projeto.png" alt="projeto">
+                            <h3>Nome de projeto</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore mollitia asperiores incidunt quasi unde, commodi in! Suscipit ullam quia dolor perferendis, eaque odio obcaecati temporibus facere ea vel corrupti illum!</p>
+                            <button class="material-symbols-outlined">arrow_forward</button>
+                        </a>
+                    </li>
+                    <li class="projeto swiper-slide">
+                        <a href="#">
+                            <img src="images/projeto.png" alt="projeto">
+                            <h3>Nome de projeto</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore mollitia asperiores incidunt quasi unde, commodi in! Suscipit ullam quia dolor perferendis, eaque odio obcaecati temporibus facere ea vel corrupti illum!</p>
+                            <button class="material-symbols-outlined">arrow_forward</button>
+                        </a>
+                    </li>
+                    <li class="projeto swiper-slide">
+                        <a href="#">
+                            <img src="images/projeto.png" alt="projeto">
+                            <h3>Nome de projeto</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore mollitia asperiores incidunt quasi unde, commodi in! Suscipit ullam quia dolor perferendis, eaque odio obcaecati temporibus facere ea vel corrupti illum!</p>
+                            <button class="material-symbols-outlined">arrow_forward</button>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
+</div>
+       </section>
+       <!--Fim de seção de projetos-->
     </main>
-        
-</body>
+    <!-- Fim do Conteúdo Principal -->
+
+    <!-- Script para garantir que o site carregue no topo -->
+    <script>
+      window.onload = function () {
+        window.scrollTo(0, 0);
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
+
+    </script>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>
