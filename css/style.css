@@ -249,26 +249,20 @@ div.text-and-image{
 #projetos .meus-projetos .lista-de-projetos .projeto.swiper-slide{
     user-select: none;
     text-align: justify;
-    box-shadow: 2px 2px 40px rgba(129, 129, 129, 0.432);
     padding: 20px;
     border-radius: 20px;
     margin: auto;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     transition: .2s;
     width: 300px; /* Definindo largura para cada slide */
 } 
-
-#projetos .meus-projetos .lista-de-projetos li:hover{
-    transform: scale(1.1);
+#projetos .meus-projetos .lista-de-projetos .projeto.swiper-slide:hover{
+    background-color: rgb(228, 228, 228);
+    border: none;
 }
 
 #projetos .meus-projetos .lista-de-projetos li{
     margin: 0 60px;
-}
-
-#projetos .meus-projetos .lista-de-projetos .projeto a p{
-    font-size: 15px;
-    padding: 20px 0;
 }
 
 .material-symbols-outlined{
@@ -278,4 +272,8 @@ div.text-and-image{
     border: 1px solid black;
     border-radius: 50%;
     padding: 5px;
+}
+#projetos .meus-projetos .lista-de-projetos .projeto a p{
+    font-size: 15px;
+    padding: 20px 0;
 }
